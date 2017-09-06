@@ -1,0 +1,26 @@
+{
+  "name": "imagesearch",
+  "version": "1.0.0",
+  "description": "This is the 4th BackEnd project for the FreeCodeCamp's certification",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-Henrique/Image-Search-Abstraction-Layer.git"
+  },
+  "author": "João Henrique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joao-Henrique/Image-Search-Abstraction-Layer/issues"
+  },
+  "homepage": "https://github.com/Joao-Henrique/Image-Search-Abstraction-Layer#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10",
+    "node-bing-api": "^3.2.2"
+  }
+}
