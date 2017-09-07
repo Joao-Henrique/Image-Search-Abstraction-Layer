@@ -96,28 +96,6 @@ app.get('/api/imagesearch/:searchVal*', (req, res) => {
 
 
 ////////////////////////////////////////////////////
-////  GET CALL WITH PARAMS TO SEARCH FOR IMAGES  ///
-app.get('/api/imagesearch/latest/imagesearch', (req, res) => {
-  var { searchVal } = req.params;
-  var { offset } = req.query;
-  var data = new searchTerm({
-    searchVal,
-    searchDate: new Date()
-  });
-// SAVE DATA TO COLLECTION
-  data.save(err => {
-    if (err) {
-      res.send('Error Saving to database');
-    }
-
-    res.json(bingData)
-  });
-}); 
-// END /////////////////////////////////////////////
-////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////
 ////////////   LISTEN ON PORT   ////////////////////
 app.listen( 3000, () => {
   console.log('SERVER IS RUNNING...')
