@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en" ng-app="shortUrlApp">
+<head>
+  <title>FCC Image Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>Image Search Abstraction Layer</h1>
+    </div>
+    <div class="container userStoryBox">
+      <h3> User Stories:</h3>
+      <h4>1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</h4>
+      <h4>2)   I can paginate through the responses by adding a ?offset=2 parameter to the URL.</h4>
+      <h4>3) I can get a list of the most recently submitted search strings.</h4>
+    </div>
+    <div>          
+      <h2>Example output:</h2>
+      <div class="container exemples">
+        <p><code>{
+          "url": "http://blog4free.com/wp-content/uploads/2017/05/funny-cats-pictures-when-it-went-nobody-knows-but-its-gone.jpg",
+          "snippet": "Funny Cats Pictures Lolcats: I let my mind wander. – Blog4Free.com",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RtX7YyCOpFQyrkTPbvJBeBIHjS1S8KjfCPstVcIiotW9GoAEJ0GnAPQ",
+          "context": "http://blog4free.com/images/funny-cats-pictures-lolcats-i-let-my-mind-wander/"
+          }</code></p>
+      </div>
+      <h2>Usage:</h2>
+      <div class="container exemples">
+        <p><code>https://img-search-jh.glitch.me/api/lolcats%20funny?offset=10</code></p>
+      </div>
+      <h2>Most recently submitted search strings</h2>
+      <div class="container exemples">
+        <p><code>https://img-search-jh.glitch.me/api/recentsearchs</code></p>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <code>This Back End project is made for Free Code Camp certification</code>
+    <br><br>
+    &copy;João Henrique 2017|No rights reserved :)
+  </footer>
+</body>
+</html>
